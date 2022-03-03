@@ -1,0 +1,44 @@
+.BurgerMenu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger{
+    width: 1.5rem;
+    height: 0.2rem;
+    position: absolute;
+    background-color: black;
+    transition: all .2s ease-in-out;
+    border-radius: 10%;
+}
+
+/* CREATE THREE BARS OUT OF ONE */
+.bar1.menu-btn__burger{
+    position: absolute;
+    transform: translateY(-0.4rem);
+}
+.bar3.menu-btn__burger{
+    transform: translateY(0.4rem);
+}
+
+/* ANIMATION */
+.BurgerMenu.open .bar2.menu-btn__burger{
+    transform: translateX(-1.5rem);
+    background: transparent;
+    box-shadow: none;
+}
+
+.BurgerMenu.open .bar1.menu-btn__burger {
+    transform: rotate(45deg)
+}
+
+.BurgerMenu.open .bar3.menu-btn__burger {
+    transform: rotate(-45deg)
+}
