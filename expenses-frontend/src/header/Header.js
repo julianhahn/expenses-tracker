@@ -1,4 +1,4 @@
-import BurgerMenu from '../singleComponents/BurgerMenu'
+import BurgerMenu from '../singleComponents/BurgerMenu/BurgerMenu'
 import './Header.css'
 
 function Header(props){
