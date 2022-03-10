@@ -1,6 +1,6 @@
-import './entryForm.css'
+import './ListItem.css'
 
-function entryForm(props){
+function ListItem(props){
 
     var formData = new FormData()
     
@@ -15,27 +15,20 @@ function entryForm(props){
      */
     return (
         <form className="entryForm" > 
-            <div id="Kategorie" className="kategorie">
-                <label htmlFor="kategorie_select" id="kategorie_label" className="kategorieLabel">Kategorie</label>
-                <select id="kategorie_select">
-                    <option> Hallo</option>
-                </select>
-            </div>
             <div id="Preis" className="Preis">
-                <label htmlFor="preis_input" id="preis_label" className="preis_label">Preis</label>
+                <label htmlFor="preis_input" id="preis_label" className="preis_label">{props.price}</label>
                 <input type="number"/>
             </div>
             <div id="Laden" className="Laden">
-                <label htmlFor="" id="laden_label" className="laden_label">Laden</label>
+                <label htmlFor="" id="laden_label" className="laden_label">{props.shopName}</label>
                 <input type="text"/>
             </div>
-
             <div id="Datum" className="Datum">
-                <label htmlFor="" id="datum_label" className="datum_label">Einkaufsdatum</label>
+                <label htmlFor="" id="datum_label" className="datum_label">{props.date}</label>
                 <input type="date"/>
             </div>
         </form>
     )
 }
 
-export default entryForm
+export default ListItem
