@@ -1,6 +1,6 @@
 import './EntryList.css'
 import listHead from './listForm.svg'
-import ListItem from '../ListItem/ListItem'
+import ListEntry from '../ListItem/ListEntry'
 
 function EntryList(props){
 
@@ -22,7 +22,7 @@ function EntryList(props){
             </div>
             <div className="listBody">
                 {entries.map((entry, i) => {
-                    return <ListItem/>
+                    return <ListEntry/>
                 })}
             </div>
         </div>

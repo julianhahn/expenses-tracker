@@ -4,8 +4,9 @@
     --bodyHeight: calc(100% - (var(--headerHeight)))
 }
 
+
 .list{
-    width: 24rem;
+    width: 18rem;
     height: 20rem;
     display: flex;
     flex-direction: column;
@@ -23,7 +24,6 @@
 .listBody{
     font-family: Roboto;
     height: var(--bodyHeight);
-    transform:  translateY(-0.7rem);
     width: 100%;
     background-color: white;
     padding: 0;

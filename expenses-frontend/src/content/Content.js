@@ -1,5 +1,5 @@
 import './Content.css'
-import EntryList from '../singleComponents/EntryList/EntryList'
+import EntryList from '../singleComponents/List/EntryList'
 
 function Content(props){
     return (

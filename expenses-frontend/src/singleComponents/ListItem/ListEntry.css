@@ -1,0 +1,22 @@
+.entryForm{
+display: flex;
+padding-left: 3%;
+padding-right: 3%;
+justify-content: space-around ;
+}
+
+.Preis{
+width: 30%;
+}
+
+.Laden{
+    width: 30%;
+}
+
+.Datum{
+    width: 30%;
+}
+
+.entryForm * input{
+    max-width: 100%;
+}
