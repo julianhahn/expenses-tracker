@@ -1,9 +1,19 @@
 import './ListEntry.css'
+import {useRef, useEffect} from 'react'
 
 function ListEntry(props){
 
-    var formData = new FormData()
-    
+    const rowContainer = useRef(null)    
+    useEffect(()=>{
+        //after the module is loaded set the background
+        if(props.index % 2 == 0){
+            rowContainer.current.classList.add("color_even")
+            rowContainer.current.classList.remove("color_odd")
+        } else {
+            rowContainer.current.classList.add("color_odd")
+            rowContainer.current.classList.remove("color_even")
+        }
+    }, [])
     // TODO for "Laden"
     // get the most current 20 shops from the database and look on any change if there matches any in this local list
     // if there is no match then aks the database if there is a sub match left
@@ -15,20 +25,11 @@ function ListEntry(props){
      */
 
     return (
-        <form className="entryForm"> 
-            <div id="Preis" className="Preis">
-                <label htmlFor="preis_input" id="preis_label" className="preis_label">{props.price}</label>
-                <input type="number" />
-            </div>
-            <div id="Laden" className="Laden">
-                <label htmlFor="" id="laden_label" className="laden_label">{props.shopName}</label>
-                <input type="text"/>
-            </div>
-            <div id="Datum" className="Datum">
-                <label htmlFor="" id="datum_label" className="datum_label">{props.date}</label>
-                <input type="date"/>
-            </div>
-        </form>
+        <div className="entryRow" ref={rowContainer}>
+            <div className="entryCost">{props.data.price}€</div>
+            <div className="entryShop">{props.data.shopName}</div>
+            <div className="entryDate">{props.data.date}</div>
+        </div>
     )
 }
 

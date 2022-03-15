@@ -26,8 +26,15 @@
     height: var(--bodyHeight);
     width: 100%;
     background-color: white;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
     margin: 0;
+}
+
+.entriesContainer{
+    width: 100%;
+    flex-grow: 1;
+    overflow-y: scroll;
 }
 
 .title{

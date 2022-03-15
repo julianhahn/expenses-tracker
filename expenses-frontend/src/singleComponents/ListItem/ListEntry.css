@@ -1,22 +1,30 @@
-.entryForm{
-display: flex;
-padding-left: 3%;
-padding-right: 3%;
-justify-content: space-around ;
+
+.entryRow{
+    display: flex;
 }
 
-.Preis{
+.color_even{
+    background-color: #F0F8FF;
+}
+
+.color_odd{
+    background-color: rgba(74, 149, 170, 0.50);
+}
+
+.entryCost{
 width: 30%;
+display: flex;
+justify-content: center;
 }
 
-.Laden{
-    width: 30%;
+.entryShop{
+width: 30%;
+display: flex;
+justify-content: center;
 }
 
-.Datum{
-    width: 30%;
-}
-
-.entryForm * input{
-    max-width: 100%;
+.entryDate{
+width: 30%;
+display: flex;
+justify-content: center;
 }

@@ -1,0 +1,26 @@
+
+.addContainer{
+    margin-bottom: 0.5rem;
+    padding: 3%;
+    justify-content: center;
+}
+
+.entryForm{
+    display: flex;
+}
+    
+.Preis{
+    width: 33%;
+}
+
+.Laden{
+    width: 33%;
+}
+
+.Datum{
+    width: 33%;
+}
+
+.entryForm * input{
+    max-width: 100%;
+}
