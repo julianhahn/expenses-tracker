@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-demo
+spec:
+  selector:
+    matchLabels:
+      app: nginx-demo
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nginx-demo
+    spec:
+      containers:
+      - name: nginx-demo
+        image: registry.hub.docker.com/library/nginx
+        ports:
+        - containerPort: 8080
