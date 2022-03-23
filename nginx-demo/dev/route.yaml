@@ -13,6 +13,6 @@ spec:
       services:
         - name: nginx-demo-service
           namespace: demo
-          port: 443
+          port: 80
   tls:
     secretName: demo-cert
