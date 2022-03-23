@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL:https://github.com/julianhahn/expenses-tracker.git
+    repoURL: https://github.com/julianhahn/expenses-tracker.git
     targetRevision: HEAD
     path: nginx-demo/dev
   destination:
