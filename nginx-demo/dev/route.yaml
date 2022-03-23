@@ -13,7 +13,9 @@ spec:
       services:
         - name: nginx-demo-service
           namespace: demo
-          port: 80
-          targetPort: 8080
+          ports:
+          - protocol: TCP
+            port: 80
+            targetPort: 8080
   tls:
     secretName: demo-cert
